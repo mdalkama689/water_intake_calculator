@@ -40,7 +40,7 @@ export default function Tab() {
       return toast.error("All fields are required!");
     }
 
-    let baseWaterIntake = weight * 35;
+    const baseWaterIntake = weight * 35;
 
     const activityFactor = parseFloat(activity);
     const adjustedWaterIntake = baseWaterIntake * activityFactor;
